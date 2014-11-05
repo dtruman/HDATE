@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="FinalGame.Classes.Game_Elements.Shop"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="300">
+    <Border x:Name="ShopMenu"
+            Background="DimGray">
+       
+
+        <UniformGrid Rows="2">
+            <UniformGrid.Background>
+                <ImageBrush ImageSource="/Resources/ControlsBorderNotPartment.png">
+                </ImageBrush>
+            </UniformGrid.Background>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="playerGoldLabel"  HorizontalAlignment="Left" Height="Auto" Content="Your Gold: "></Label>
+                    <Label x:Name="playerGold"  Width="200" HorizontalAlignment="Left" Height="Auto" Content="{Binding Path=CurrentGold, Mode=TwoWay}"></Label>
+                </StackPanel>
+
+                <Label x:Name="playerWeapons"  Width="170" HorizontalAlignment="Left" Height="Auto" Content="Your Weapons: "></Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="weaponBox" Width="121" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="auto" Content="{Binding Path=ItemName, Mode=OneWay}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button x:Name="sellWeapon">Sell</Button>
+                </StackPanel>
+                <Label x:Name="weaponSellCost" Width="200">Sell for - </Label>
+
+                <Label x:Name="playerArmor"  Width="170" HorizontalAlignment="Left" Height="Auto" Content="Your Armor: "></Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="armorBox" Width="121" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="auto" Content="{Binding Path=ItemName}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button x:Name="sellArmor">Sell</Button>
+                </StackPanel>
+                <Label x:Name="armorSellCost" Width="200">Sell for - </Label>
+
+                <Label x:Name="playerConsumables"  Width="170" HorizontalAlignment="Left" Height="Auto" Content="Your Consumables: "></Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="consumeBox" Width="121" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="auto" Content="{Binding Path=ItemName}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button x:Name="sellConsumable">Sell</Button>
+                </StackPanel>
+                <Label x:Name="consumableSellCost" Width="200">Sell for - </Label>
+
+                
+                
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="shopWeapons"  Width="170" HorizontalAlignment="Left" Height="Auto" Content="Shop Weapons: "></Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="shopWeaponBox" Width="121" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="auto" Content="{Binding Path=ItemName}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button x:Name="buyWeapon">Buy</Button>
+                </StackPanel>
+                <Label x:Name="weaponBuyCost" Width="200">Buy for - </Label>
+
+                <Label x:Name="shopArmor"  Width="170" HorizontalAlignment="Left" Height="Auto" Content="Shop Armor: "></Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="shopArmorBox" Width="121" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="auto" Content="{Binding Path=ItemName}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button x:Name="buyArmor">Buy</Button>
+                </StackPanel>
+                <Label x:Name="armorBuyCost" Width="200">Buy for - </Label>
+
+                <Label x:Name="shopConsumables"  Width="170" HorizontalAlignment="Left" Height="Auto" Content="Shop Consumables: "></Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="shopConsumeBox" Width="121" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="auto" Content="{Binding Path=ItemName}"></Label>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Button x:Name="buyConsumable">Buy</Button>
+                </StackPanel>
+                <Label x:Name="consumableBuyCost" Width="200">Buy for - </Label>
+
+            </StackPanel>
+
+        </UniformGrid>
+    </Border>
+</UserControl>

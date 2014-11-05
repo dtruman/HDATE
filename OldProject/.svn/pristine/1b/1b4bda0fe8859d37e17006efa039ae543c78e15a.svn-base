@@ -1,0 +1,78 @@
+﻿<Window x:Class="MapTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MapTest" Height="450" Width="800"
+        KeyDown="keyPressed">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="25"></Setter>
+            <Setter Property="Width" Value="75"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Height" Value="25"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+            <Setter Property="FontWeight" Value="ExtraBold"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Foreground" Value="BlanchedAlmond"></Setter>
+            <Setter Property="FontFamily" Value="Courier New Bold Italic"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="Width" Value="125"></Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Viewbox Stretch="UniformToFill">
+            <Image Source="Resources/background.png" Stretch="UniformToFill"></Image>
+        </Viewbox>
+        <Viewbox>
+            <Grid VerticalAlignment="Top" Background="Black" Width="1053" Height="560" >
+                <Viewbox Margin="0,0,217,0">
+                    <Grid x:Name="playArea" ShowGridLines="False"/>
+                </Viewbox>
+
+                <Grid x:Name="charArea" Background="Black" Margin="841,0,0,0">
+                    <Image Source="Resources/ControlsBorderNotPartment.png" Stretch="UniformToFill"/>
+                    <Grid x:Name="PlayerName_FloorNumber" Margin="0,0,0,476">
+                        <Label x:Name="charName" Margin="10,22,50,0" Content="Character Name" Width="Auto" Height="35" VerticalAlignment="Top"></Label>
+                        <Label x:Name="FloorLabel" Margin="10,45,74,10" Content="Floor Number: " Width="Auto" Height="Auto"/>
+                        <Label x:Name="FloorNumber" Margin="128,45,10,10" Width="Auto" Height="Auto"></Label>
+                    </Grid>
+                    <Grid x:Name="HP_XP" Margin="0,217,0,222">
+                        <Label x:Name="healthLabel" Content="HP: " Margin="10,27,94,74"></Label>
+                        <Grid Margin="56,22,23,69" Height="35" Width="125">
+                            <ProgressBar x:Name="playerHealth" Value="75"></ProgressBar>
+                            <TextBlock Text="{Binding ElementName=playerHealth, Path=Value}" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
+                        </Grid>
+                        <Label x:Name="expLabel" Content="EXP: " Margin="10,67,94,34"></Label>
+                        <Grid Margin="56,62,23,29" Width="125" Height="35">
+                            <ProgressBar x:Name="playerExP" Foreground="DarkViolet" Value="50"></ProgressBar>
+                            <TextBlock Text="{Binding ElementName=playerExP, Path=Value}" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
+                        </Grid>
+                    </Grid>
+                    <Grid x:Name="playerStats" Margin="0,89,0,333">
+                        <Label Margin="10,10,94,95" Content="Str: " Width="Auto" Height="Auto"/>
+                        <Label x:Name="strLevel" Margin="64,10,10,95" Content="6780" Width="Auto" Height="Auto"/>
+
+                        <Label Margin="10,43,94,59" Content="Int: " Width="Auto" Height="Auto"/>
+                        <Label x:Name="intLevel" Margin="64,43,10,59" Content="6730" Width="Auto" Height="Auto"/>
+
+                        <Label Margin="10,79,94,28" Content="Dex: " Width="Auto" Height="Auto"/>
+                        <Label x:Name="dexLevel" Margin="64,79,10,0" Content="3000" Width="Auto" Height="31" VerticalAlignment="Top"/>
+                    </Grid>
+                    <Grid x:Name="playerInv" Margin="0,343,10,33">
+                        <Label x:Name="armorLabel" Margin="0,20,88,96" Width="Auto" Height="Auto" Content="Armor: " HorizontalAlignment="Right"></Label>
+                        <ComboBox x:Name="armorBox" Margin="97,21,15,94" Width="Auto" RenderTransformOrigin="0.591,-0.267"></ComboBox>
+
+                        <Label x:Name="weaponLabel" Margin="0,68,88,36" Width="Auto" Height="Auto"  HorizontalAlignment="Right" Content="Weapon: "></Label>
+                        <ComboBox x:Name="weaponBox" Margin="97,66,15,49" Width="Auto"></ComboBox>
+
+                        <Label x:Name="consumeLabel" Margin="0,112,56,0" Width="Auto" HorizontalAlignment="Right" Height="Auto" Content="Consumables: "></Label>
+                        <ComboBox x:Name="consumeBox" Margin="97,115,15,0" Width="Auto"></ComboBox>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>

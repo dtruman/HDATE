@@ -1,0 +1,33 @@
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\bin\Debug\FinalGame.exe.config
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\bin\Debug\FinalGame.exe
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\bin\Debug\FinalGame.pdb
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\bin\Debug\WpfAnimatedGif.dll
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\bin\Debug\WpfAnimatedGif.xml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame.csprojResolveAssemblyReference.cache
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\CharacterCreation.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\CombatGUI.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\DeathScreen.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\EndLevelWin.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\MessageWindow.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\Shop.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\StartScreen.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\MainWindow.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\CharacterCreation.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\CombatGUI.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\DeathScreen.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\EndLevelWin.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\inGame.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\MessageWindow.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\Shop.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\StartScreen.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\MainWindow.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\App.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame_MarkupCompile.cache
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame_MarkupCompile.lref
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\Classes\Game Elements\inGame.baml
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame.g.resources
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame.Properties.Resources.resources
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame.csproj.GenerateResource.Cache
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame.exe
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\FinalGame.pdb

@@ -1,0 +1,20 @@
+﻿FinalGame
+
+
+winexe
+C#
+.cs
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\obj\Debug\
+FinalGame
+none
+false
+DEBUG;TRACE
+C:\Users\dtruman\Documents\OldProject\FinalGame\FinalGame\App.xaml
+9-155164414
+
+431504484107
+15-925460836
+Classes\Game Elements\CharacterCreation.xaml;Classes\Game Elements\CombatGUI.xaml;Classes\Game Elements\DeathScreen.xaml;Classes\Game Elements\EndLevelWin.xaml;Classes\Game Elements\inGame.xaml;Classes\Game Elements\MessageWindow.xaml;Classes\Game Elements\Shop.xaml;Classes\Game Elements\StartScreen.xaml;MainWindow.xaml;
+
+True
+

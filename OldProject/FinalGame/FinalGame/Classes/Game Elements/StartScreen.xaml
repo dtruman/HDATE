@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="FinalGame.Classes.Game_Elements.StartScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Height" Value="25"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+            <Setter Property="FontWeight" Value="ExtraBold"></Setter>
+            <Setter Property="FontSize" Value="40"></Setter>
+            <Setter Property="Foreground" Value="Yellow"></Setter>
+            <Setter Property="FontFamily" Value="Courier New Bold Italic"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Black"></Setter>
+            <Setter Property="Foreground" Value="Yellow"></Setter>
+            <Setter Property="BorderBrush" Value="Yellow"></Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+
+        <Grid Background="Black">
+            <Image Source="/Resources/He Dies At The End Title.bmp" Stretch="UniformToFill" Margin="0,0,-92,0"></Image>
+            <Viewbox>
+                <Grid>
+                    <Label VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="Auto">He Dies At The End</Label>
+                    <Grid>
+                        <Button x:Name="NewGame" Margin="344,292,323,118" Width="150" Height="35" Content="New Game" Click="NewGame_Click" >
+                        </Button>
+                        <Button x:Name="LoadGame" Margin="344,345,323,65" Width="150" Height="35" Content="Load Game" Click="LoadGame_Click"/>
+                    </Grid>
+
+                </Grid>
+            </Viewbox>
+        </Grid>
+    </Grid>
+</UserControl>

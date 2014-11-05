@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="FinalGame.Classes.Game_Elements.CharacterCreation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">   
+    <Viewbox>
+        <StackPanel Height="450" Width="800">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/Resources/Parchment.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <StackPanel Orientation="Horizontal"
+                        Margin="20 70 20 20">
+                <Label FontSize="35"
+                       FontFamily="Chiller"
+                       Margin="0 0 180 0">Please enter your character's name:</Label>
+                <TextBox Width="200"
+                         Height="50"
+                         Text="{Binding Path=Name}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="20">
+                <Label FontSize="35"
+                       FontFamily="Chiller">Strength</Label>
+                <Label FontSize="35"
+                       FontFamily="Chiller" 
+                       Content="{Binding Path=Strength}"></Label>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="20">
+                <Label FontSize="35"
+                       FontFamily="Chiller">Dexterity</Label>
+                <Label FontSize="35"
+                       FontFamily="Chiller" 
+                       Content="{Binding Path=Dexterity}"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="20">
+                <Label FontSize="35"
+                       FontFamily="Chiller">Intelligence</Label>
+                <Label FontSize="35"
+                       FontFamily="Chiller" 
+                       Content="{Binding Path=Intelligence}"></Label>
+            </StackPanel>
+        </StackPanel>
+    </Viewbox>
+</UserControl>

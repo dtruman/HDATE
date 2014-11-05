@@ -1,0 +1,10 @@
+﻿<Window x:Class="FinalGame.Classes.Game_Elements.MessageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MessageWindow" Height="200" Width="300" Background="Black">
+    <Canvas x:Name="messageWindow">
+        <Grid x:Name="messageImage" Height="150" Width="260" Canvas.Left="15" Canvas.Top="10"/>
+        <Label x:Name="messageLabel" Foreground="Yellow" Canvas.Left="25" Canvas.Top="65" Width="250" Height="60" />
+        <Button x:Name="messageExitButton" Click="exit_Click" Background="Black" Foreground="Yellow" Content="Okay, continue!" Width="90" Canvas.Left="105" Canvas.Top="134" Height="25"/>
+    </Canvas>
+</Window>
